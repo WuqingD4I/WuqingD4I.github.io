@@ -1,2 +1,42 @@
-body {height: 90vh;}
-#map { height: 100%; width: 100%; }
+#mapContainer {
+    display: flex;
+    justify-content: space-between;
+    height: 500px; /* Same height as map */
+  }
+  
+  #map {
+    height: 100%; /* Ensure the map takes the full height of the container */
+    width: 70%; /* Adjust width of the map */
+  }
+  
+  #markersTable {
+    width: 100%; /* Adjust width of the table */
+    margin-left: 10px;
+    border-collapse: collapse;
+    height: 100%; /* Ensure table takes full available height */
+    display: table; /* Use default table display */
+  }
+  
+  #markersTable th, #markersTable td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  #markersTable .selected {
+    background-color: #add8e6; /* Highlight for selected row */
+    font-weight: bold;
+  }
+  
+  /* Scrollable tbody without affecting the header */
+  #markersTableWrapper {
+    display: inline-block;
+
+    height: 100%;
+    width: 28%;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* max-height: 450px;  */
+
+  }
