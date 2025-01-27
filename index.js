@@ -7,9 +7,6 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 
-
-
-
 const markers = []
 
 // Function to update the route based on input
