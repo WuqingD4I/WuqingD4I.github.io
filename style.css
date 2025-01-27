@@ -40,3 +40,36 @@
     /* max-height: 450px;  */
 
   }
+
+  #inputContainer {
+    width: 28%;
+    margin-left: 10px;
+    padding: 10px;
+    background: #f4f4f4;
+    border-radius: 8px;
+}
+
+#inputContainer label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#inputContainer input {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+#inputContainer button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+#inputContainer button:hover {
+    background-color: #45a049;
+}

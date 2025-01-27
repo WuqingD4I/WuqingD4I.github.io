@@ -13,6 +13,21 @@
     />
   </head>
   <body>
+    <div id="inputContainer">
+      <label for="pointA">Point A (Lat, Lng):</label>
+      <input type="text" id="pointA" value="41.9007, 12.4951" />
+
+      <label for="pointB">Point B (Lat, Lng):</label>
+      <input type="text" id="pointB" value="45.4877, 9.1905" />
+
+      <label for="interval">Interval (meters):</label>
+      <input type="number" id="interval" value="5000" />
+
+      <label for="zoom">Zoom:</label>
+      <input type="number" id="zoom" value="13" />
+
+      <button onclick="updateRoute()">Update Route</button>
+    </div>
     <div id="mapContainer">
       <div id="map"></div>
       <div id="markersTableWrapper">
@@ -29,6 +44,7 @@
         </table>
       </div>
     </div>
+
     <script
       src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
       integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
